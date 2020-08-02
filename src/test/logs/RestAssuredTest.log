@@ -1,0 +1,271 @@
+2020-08-02 20:01:01 INFO  GetRequestTest:27 - Ergast api kullanılarak get sorgusu yapılıyor.
+2020-08-02 20:01:03 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://ergast.com:80
+2020-08-02 20:01:03 DEBUG DefaultClientConnectionOperator:177 - Connecting to ergast.com:80
+2020-08-02 20:01:03 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-02 20:01:03 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-02 20:01:03 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-02 20:01:03 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-02 20:01:03 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-02 20:01:03 DEBUG DefaultClientConnection:274 - Sending request: GET /api/f1/2017/circuits.json HTTP/1.1
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "GET /api/f1/2017/circuits.json HTTP/1.1[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "Host: ergast.com[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "Accept-Encoding: gz?p,deflate[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-02 20:01:03 DEBUG headers:278 - >> GET /api/f1/2017/circuits.json HTTP/1.1
+2020-08-02 20:01:03 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-02 20:01:03 DEBUG headers:281 - >> Accept: */*
+2020-08-02 20:01:03 DEBUG headers:281 - >> Host: ergast.com
+2020-08-02 20:01:03 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-02 20:01:03 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)
+2020-08-02 20:01:03 DEBUG headers:281 - >> Accept-Encoding: gzıp,deflate
+2020-08-02 20:01:03 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "Date: Sun, 02 Aug 2020 17:42:35 GMT[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "Server: Apache/2.2.15 (CentOS)[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "X-Powered-By: PHP/5.3.3[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "Content-Length: 4551[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "Connection: close[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-08-02 20:01:03 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-02 20:01:03 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-02 20:01:03 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-02 20:01:03 DEBUG headers:265 - << Date: Sun, 02 Aug 2020 17:42:35 GMT
+2020-08-02 20:01:03 DEBUG headers:265 - << Server: Apache/2.2.15 (CentOS)
+2020-08-02 20:01:03 DEBUG headers:265 - << X-Powered-By: PHP/5.3.3
+2020-08-02 20:01:03 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-02 20:01:03 DEBUG headers:265 - << Content-Length: 4551
+2020-08-02 20:01:03 DEBUG headers:265 - << Connection: close
+2020-08-02 20:01:03 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2020-08-02 20:01:03 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2020-08-02 20:01:03 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-02 20:01:03 DEBUG wire:87 -  << "{"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/2017/circuits.json","limit":"30","offset":"0","total":"20","CircuitTable":{"season":"2017","Circuits":[{"circuitId":"albert_park","url":"http:\/\/en.wikipedia.org\/wiki\/Melbourne_Grand_Prix_Circuit","circuitName":"Albert Park Grand Prix Circuit","Location":{"lat":"-37.8497","long":"144.968","locality":"Melbourne","country":"Australia"}},{"circuitId":"americas","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_of_the_Americas","circuitName":"Circuit of the Americas","Location":{"lat":"30.1328","long":"-97.6411","locality":"Austin","country":"USA"}},{"circuitId":"bahrain","url":"http:\/\/en.wikipedia.org\/wiki\/Bahrain_International_Circuit","circuitName":"Bahrain International Circuit","Location":{"lat":"26.0325","long":"50.5106","locality":"Sakhir","country":"Bahrain"}},{"circuitId":"BAK","url":"http:\/\/en.wikipedia.org\/wiki\/Baku_City_Circuit","circuitName":"Baku City Circuit","Location":{"lat":"40.3725","long":"49.8533","locality":"Baku","country":"Azerbaijan"}},{"circuitId":"catalunya","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Barcelona-Catalunya","circuitName":"Circuit de Barcelona-Catalunya","Location":{"lat":"41.57","long":"2.26111","locality":"Montmel[0xc3][0xb3]","country":"Spain"}},{"circuitId":"hungaroring","url":"http:\/\/en.wikipedia.org\/wiki\/Hungaroring","circuitName":"Hungaroring","Location":{"lat":"47.5789","long":"19.2486","locality":"Budapest","country":"Hungary"}},{"circuitId":"interlagos","url":"http:\/\/en.wikipedia.org\/wiki\/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace","circuitName":"Aut[0xc3][0xb3]dromo Jos[0xc3][0xa9] Carlos Pace","Location":{"lat":"-23.7036","long":"-46.6997","locality":"S[0xc3][0xa3]o Paulo","country":"Brazil"}},{"circuitId":"marina_bay","url":"http:\/\/en.wikipedia.org\/wiki\/Marina_Bay_Street_Circuit","circuitName":"Marina Bay Street Circuit","Location":{"lat":"1.2914","long":"103.864","locality":"Marina Bay","country":"Singapore"}},{"circuitId":"monaco","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Monaco","circuitName":"Circuit de Monaco","Location":{"lat":"43.7347","long":"7.42056","locality":"Monte-Carlo","country":"Monaco"}},{"circuitId":"monza","url":"http:\/\/en.wikipedia.org\/wiki\/Autodromo_Nazionale_Monza","circuitName":"Autodromo Nazionale di Monza","Location":{"lat":"45.6156","long":"9.28111","locality":"Monza","country":"Italy"}},{"circuitId":"red_bull_ring","url":"http:\/\/en.wikipedia.org\/wiki\/Red_Bull_Ring","circuitName":"Red Bull Ring","Location":{"lat":"47.2197","long":"14.7647","locality":"Spielburg","country":"Austria"}},{"circuitId":"rodriguez","url":"http:\/\/en.wikipedia.org\/wiki\/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez","circuitName":"Aut[0xc3][0xb3]dromo Hermanos Rodr[0xc3][0xad]guez","Location":{"lat":"19.4042","long":"-99.0907","locality":"Mexico City","country":"Mexico"}},{"circuitId":"sepang","url":"http:\/\/en.wikipedia.org\/wiki\/Sepang_International_Circuit","circuitName":"Sepang International Circuit","Location":{"lat":"2.76083","long":"101.738","locality":"Kuala Lumpur","country":"Malaysia"}},{"circuitId":"shanghai","url":"http:\/\/en.wikipedia.org\/wiki\/Shanghai_International_Circuit","circuitName":"Shanghai International Circuit","Location":{"lat":"31.3389","long":"121.22","locality":"Shanghai","country":"China"}},{"circuitId":"silverstone","url":"http:\/\/en.wikipedia.org\/wiki\/Silverstone_Circuit","circuitName":"Silverstone Circuit","Location":{"lat":"52.0786","long":"-1.01694","locality":"Silverstone","country":"UK"}},{"circuitId":"sochi","url":"http:\/\/en.wikipedia.org\/wiki\/Sochi_Autodrom","circuitName":"Sochi Autodrom","Location":{"lat":"43.4057","long":"39.9578","locality":"Sochi","country":"Russia"}},{"circuitId":"spa","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Spa-Francorchamps","circuitName":"Circuit de Spa-Francorchamps","Location":{"lat":"50.4372","long":"5.97139","locality":"Spa","country":"Belgium"}},{"circuitId":"suzuka","url":"http:\/\/en.wikipedia.org\/wiki\/Suzuka_Circuit","circuitName":"Suzuka Circuit","Location":{"lat":"34.8431","long":"136.541","locality":"Suzuka","country":"Japan"}},{"circuitId":"villeneuve","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_Gilles_Villeneuve","circuitName":"Circuit Gilles Villeneuve","Location":{"lat":"45.5","long":"-73.5228","locality":"Montreal","country":"Canada"}},{"circuitId":"yas_marina","url":"http:\/\/en.wikipedia.org\/wiki\/Yas_Marina_Circuit","circuitName":"Yas Marina Circuit","Location":{"lat":"24.4672","long":"54.6031","locality":"Abu Dhabi","country":"UAE"}}]}}}"
+2020-08-02 20:01:03 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@56f0cc85
+2020-08-02 20:01:03 DEBUG DefaultClientConnection:164 - Connection 0.0.0.0:55901<->81.27.85.129:80 shut down
+2020-08-02 20:01:04 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://ergast.com:80
+2020-08-02 20:01:04 DEBUG DefaultClientConnectionOperator:177 - Connecting to ergast.com:80
+2020-08-02 20:01:04 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-02 20:01:04 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-02 20:01:04 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-02 20:01:04 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-02 20:01:04 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-02 20:01:04 DEBUG DefaultClientConnection:274 - Sending request: GET /api/f1/circuits/albert_park.json HTTP/1.1
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "GET /api/f1/circuits/albert_park.json HTTP/1.1[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "Host: ergast.com[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "Accept-Encoding: gz?p,deflate[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-02 20:01:04 DEBUG headers:278 - >> GET /api/f1/circuits/albert_park.json HTTP/1.1
+2020-08-02 20:01:04 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-02 20:01:04 DEBUG headers:281 - >> Accept: */*
+2020-08-02 20:01:04 DEBUG headers:281 - >> Host: ergast.com
+2020-08-02 20:01:04 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-02 20:01:04 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)
+2020-08-02 20:01:04 DEBUG headers:281 - >> Accept-Encoding: gzıp,deflate
+2020-08-02 20:01:04 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "Date: Sun, 02 Aug 2020 17:42:36 GMT[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "Server: Apache/2.2.15 (CentOS)[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "X-Powered-By: PHP/5.3.3[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "Content-Length: 456[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "Connection: close[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-08-02 20:01:04 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-02 20:01:04 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-02 20:01:04 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-02 20:01:04 DEBUG headers:265 - << Date: Sun, 02 Aug 2020 17:42:36 GMT
+2020-08-02 20:01:04 DEBUG headers:265 - << Server: Apache/2.2.15 (CentOS)
+2020-08-02 20:01:04 DEBUG headers:265 - << X-Powered-By: PHP/5.3.3
+2020-08-02 20:01:04 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-02 20:01:04 DEBUG headers:265 - << Content-Length: 456
+2020-08-02 20:01:04 DEBUG headers:265 - << Connection: close
+2020-08-02 20:01:04 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2020-08-02 20:01:04 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2020-08-02 20:01:04 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-02 20:01:04 DEBUG wire:87 -  << "{"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/circuits/albert_park.json","limit":"30","offset":"0","total":"1","CircuitTable":{"circuitId":"albert_park","Circuits":[{"circuitId":"albert_park","url":"http:\/\/en.wikipedia.org\/wiki\/Melbourne_Grand_Prix_Circuit","circuitName":"Albert Park Grand Prix Circuit","Location":{"lat":"-37.8497","long":"144.968","locality":"Melbourne","country":"Australia"}}]}}}"
+2020-08-02 20:01:04 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@9fecdf1
+2020-08-02 20:01:04 DEBUG DefaultClientConnection:164 - Connection 0.0.0.0:55902<->81.27.85.129:80 shut down
+2020-08-02 20:06:29 DEBUG GetRequestTest:32 - Post request
+2020-08-02 20:06:30 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://dummy.restapiexample.com:80
+2020-08-02 20:06:31 DEBUG DefaultClientConnectionOperator:177 - Connecting to dummy.restapiexample.com:80
+2020-08-02 20:06:31 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-02 20:06:31 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-02 20:06:31 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-02 20:06:31 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-02 20:06:31 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-02 20:06:31 DEBUG DefaultClientConnection:274 - Sending request: POST /api/v1/create HTTP/1.1
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "Content-Length: 43[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "Accept-Encoding: gz?p,deflate[\r][\n]"
+2020-08-02 20:06:31 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-02 20:06:31 DEBUG headers:278 - >> POST /api/v1/create HTTP/1.1
+2020-08-02 20:06:31 DEBUG headers:281 - >> Accept: */*
+2020-08-02 20:06:31 DEBUG headers:281 - >> Content-Type: text/plain; charset=ISO-8859-1
+2020-08-02 20:06:31 DEBUG headers:281 - >> Content-Length: 43
+2020-08-02 20:06:31 DEBUG headers:281 - >> Host: dummy.restapiexample.com
+2020-08-02 20:06:31 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-02 20:06:31 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)
+2020-08-02 20:06:31 DEBUG headers:281 - >> Accept-Encoding: gzıp,deflate
+2020-08-02 20:06:31 DEBUG wire:87 -  >> "{"name":"Gamze","salary":"1000","age":"20"}"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Cache-Control: no-cache, private, max-age=31536000[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Date: Sun, 02 Aug 2020 17:06:32 GMT[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Display: staticcontent_sol[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Expires: Mon, 02 Aug 2021 17:06:32 GMT[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Referrer-Policy: [\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Response: 200[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Server: nginx/1.16.0[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Vary: Accept-Encoding,Origin[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "X-Middleton-Response: 200[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "X-Ratelimit-Limit: 60[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "X-Ratelimit-Remaining: 59[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "X-Sol: pub_site[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "Content-Length: 88[\r][\n]"
+2020-08-02 20:06:32 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-02 20:06:32 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-02 20:06:32 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-02 20:06:32 DEBUG headers:265 - << Cache-Control: no-cache, private, max-age=31536000
+2020-08-02 20:06:32 DEBUG headers:265 - << Content-Type: application/json
+2020-08-02 20:06:32 DEBUG headers:265 - << Date: Sun, 02 Aug 2020 17:06:32 GMT
+2020-08-02 20:06:32 DEBUG headers:265 - << Display: staticcontent_sol
+2020-08-02 20:06:32 DEBUG headers:265 - << Expires: Mon, 02 Aug 2021 17:06:32 GMT
+2020-08-02 20:06:32 DEBUG headers:265 - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2020-08-02 20:06:32 DEBUG headers:265 - << Referrer-Policy: 
+2020-08-02 20:06:32 DEBUG headers:265 - << Response: 200
+2020-08-02 20:06:32 DEBUG headers:265 - << Server: nginx/1.16.0
+2020-08-02 20:06:32 DEBUG headers:265 - << Vary: Accept-Encoding
+2020-08-02 20:06:32 DEBUG headers:265 - << Vary: Accept-Encoding,Origin
+2020-08-02 20:06:32 DEBUG headers:265 - << X-Ezoic-Cdn: Miss
+2020-08-02 20:06:32 DEBUG headers:265 - << X-Middleton-Display: staticcontent_sol
+2020-08-02 20:06:32 DEBUG headers:265 - << X-Middleton-Response: 200
+2020-08-02 20:06:32 DEBUG headers:265 - << X-Ratelimit-Limit: 60
+2020-08-02 20:06:32 DEBUG headers:265 - << X-Ratelimit-Remaining: 59
+2020-08-02 20:06:32 DEBUG headers:265 - << X-Sol: pub_site
+2020-08-02 20:06:32 DEBUG headers:265 - << Content-Length: 88
+2020-08-02 20:06:32 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2020-08-02 20:06:32 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2020-08-02 20:06:32 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-02 20:06:32 DEBUG wire:87 -  << "{"status":"success","data":{"id":7592},"message":"Successfully! Record has been added."}"
+2020-08-02 20:06:32 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7a48e6e2
+2020-08-02 20:06:32 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2020-08-02 20:06:33 INFO  GetRequestTest:43 - Response :{
+    "status": "success",
+    "data": {
+        "id": 7592
+    },
+    "message": "Successfully! Record has been added."
+}
+2020-08-02 20:08:26 INFO  GetRequestTest:27 - Ergast api kullanılarak get sorgusu yapılıyor.
+2020-08-02 20:08:27 INFO  GetRequestTest:54 - pathParam kullanılarak parametreli get sorgusu yapılması
+2020-08-02 20:08:29 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://ergast.com:80
+2020-08-02 20:08:29 DEBUG DefaultClientConnectionOperator:177 - Connecting to ergast.com:80
+2020-08-02 20:08:29 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-02 20:08:29 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-02 20:08:29 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-02 20:08:29 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-02 20:08:29 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-02 20:08:29 DEBUG DefaultClientConnection:274 - Sending request: GET /api/f1/2017/circuits.json HTTP/1.1
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "GET /api/f1/2017/circuits.json HTTP/1.1[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "Host: ergast.com[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "Accept-Encoding: gz?p,deflate[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-02 20:08:29 DEBUG headers:278 - >> GET /api/f1/2017/circuits.json HTTP/1.1
+2020-08-02 20:08:29 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-02 20:08:29 DEBUG headers:281 - >> Accept: */*
+2020-08-02 20:08:29 DEBUG headers:281 - >> Host: ergast.com
+2020-08-02 20:08:29 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-02 20:08:29 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)
+2020-08-02 20:08:29 DEBUG headers:281 - >> Accept-Encoding: gzıp,deflate
+2020-08-02 20:08:29 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "Date: Sun, 02 Aug 2020 17:50:01 GMT[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "Server: Apache/2.2.15 (CentOS)[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "X-Powered-By: PHP/5.3.3[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "Content-Length: 4551[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "Connection: close[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-08-02 20:08:29 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-02 20:08:29 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-02 20:08:29 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-02 20:08:29 DEBUG headers:265 - << Date: Sun, 02 Aug 2020 17:50:01 GMT
+2020-08-02 20:08:29 DEBUG headers:265 - << Server: Apache/2.2.15 (CentOS)
+2020-08-02 20:08:29 DEBUG headers:265 - << X-Powered-By: PHP/5.3.3
+2020-08-02 20:08:29 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-02 20:08:29 DEBUG headers:265 - << Content-Length: 4551
+2020-08-02 20:08:29 DEBUG headers:265 - << Connection: close
+2020-08-02 20:08:29 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2020-08-02 20:08:29 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2020-08-02 20:08:29 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-02 20:08:29 DEBUG wire:87 -  << "{"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/2017/circuits.json","limit":"30","offset":"0","total":"20","CircuitTable":{"season":"2017","Circuits":[{"circuitId":"albert_park","url":"http:\/\/en.wikipedia.org\/wiki\/Melbourne_Grand_Prix_Circuit","circuitName":"Albert Park Grand Prix Circuit","Location":{"lat":"-37.8497","long":"144.968","locality":"Melbourne","country":"Australia"}},{"circuitId":"americas","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_of_the_Americas","circuitName":"Circuit of the Americas","Location":{"lat":"30.1328","long":"-97.6411","locality":"Austin","country":"USA"}},{"circuitId":"bahrain","url":"http:\/\/en.wikipedia.org\/wiki\/Bahrain_International_Circuit","circuitName":"Bahrain International Circuit","Location":{"lat":"26.0325","long":"50.5106","locality":"Sakhir","country":"Bahrain"}},{"circuitId":"BAK","url":"http:\/\/en.wikipedia.org\/wiki\/Baku_City_Circuit","circuitName":"Baku City Circuit","Location":{"lat":"40.3725","long":"49.8533","locality":"Baku","country":"Azerbaijan"}},{"circuitId":"catalunya","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Barcelona-Catalunya","circuitName":"Circuit de Barcelona-Catalunya","Location":{"lat":"41.57","long":"2.26111","locality":"Montmel[0xc3][0xb3]","country":"Spain"}},{"circuitId":"hungaroring","url":"http:\/\/en.wikipedia.org\/wiki\/Hungaroring","circuitName":"Hungaroring","Location":{"lat":"47.5789","long":"19.2486","locality":"Budapest","country":"Hungary"}},{"circuitId":"interlagos","url":"http:\/\/en.wikipedia.org\/wiki\/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace","circuitName":"Aut[0xc3][0xb3]dromo Jos[0xc3][0xa9] Carlos Pace","Location":{"lat":"-23.7036","long":"-46.6997","locality":"S[0xc3][0xa3]o Paulo","country":"Brazil"}},{"circuitId":"marina_bay","url":"http:\/\/en.wikipedia.org\/wiki\/Marina_Bay_Street_Circuit","circuitName":"Marina Bay Street Circuit","Location":{"lat":"1.2914","long":"103.864","locality":"Marina Bay","country":"Singapore"}},{"circuitId":"monaco","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Monaco","circuitName":"Circuit de Monaco","Location":{"lat":"43.7347","long":"7.42056","locality":"Monte-Carlo","country":"Monaco"}},{"circuitId":"monza","url":"http:\/\/en.wikipedia.org\/wiki\/Autodromo_Nazionale_Monza","circuitName":"Autodromo Nazionale di Monza","Location":{"lat":"45.6156","long":"9.28111","locality":"Monza","country":"Italy"}},{"circuitId":"red_bull_ring","url":"http:\/\/en.wikipedia.org\/wiki\/Red_Bull_Ring","circuitName":"Red Bull Ring","Location":{"lat":"47.2197","long":"14.7647","locality":"Spielburg","country":"Austria"}},{"circuitId":"rodriguez","url":"http:\/\/en.wikipedia.org\/wiki\/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez","circuitName":"Aut[0xc3][0xb3]dromo Hermanos Rodr[0xc3][0xad]guez","Location":{"lat":"19.4042","long":"-99.0907","locality":"Mexico City","country":"Mexico"}},{"circuitId":"sepang","url":"http:\/\/en.wikipedia.org\/wiki\/Sepang_International_Circuit","circuitName":"Sepang International Circuit","Location":{"lat":"2.76083","long":"101.738","locality":"Kuala Lumpur","country":"Malaysia"}},{"circuitId":"shanghai","url":"http:\/\/en.wikipedia.org\/wiki\/Shanghai_International_Circuit","circuitName":"Shanghai International Circuit","Location":{"lat":"31.3389","long":"121.22","locality":"Shanghai","country":"China"}},{"circuitId":"silverstone","url":"http:\/\/en.wikipedia.org\/wiki\/Silverstone_Circuit","circuitName":"Silverstone Circuit","Location":{"lat":"52.0786","long":"-1.01694","locality":"Silverstone","country":"UK"}},{"circuitId":"sochi","url":"http:\/\/en.wikipedia.org\/wiki\/Sochi_Autodrom","circuitName":"Sochi Autodrom","Location":{"lat":"43.4057","long":"39.9578","locality":"Sochi","country":"Russia"}},{"circuitId":"spa","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Spa-Francorchamps","circuitName":"Circuit de Spa-Francorchamps","Location":{"lat":"50.4372","long":"5.97139","locality":"Spa","country":"Belgium"}},{"circuitId":"suzuka","url":"http:\/\/en.wikipedia.org\/wiki\/Suzuka_Circuit","circuitName":"Suzuka Circuit","Location":{"lat":"34.8431","long":"136.541","locality":"Suzuka","country":"Japan"}},{"circuitId":"villeneuve","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_Gilles_Villeneuve","circuitName":"Circuit Gilles Villeneuve","Location":{"lat":"45.5","long":"-73.5228","locality":"Montreal","country":"Canada"}},{"circuitId":"yas_marina","url":"http:\/\/en.wikipedia.org\/wiki\/Yas_Marina_Circuit","circuitName":"Yas Marina Circuit","Location":{"lat":"24.4672","long":"54.6031","locality":"Abu Dhabi","country":"UAE"}}]}}}"
+2020-08-02 20:08:29 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@10b9db7b
+2020-08-02 20:08:29 DEBUG DefaultClientConnection:164 - Connection 0.0.0.0:56013<->81.27.85.129:80 shut down
+2020-08-02 20:08:30 INFO  GetRequestTest:67 - Response :io.restassured.internal.RequestSpecificationImpl@450794b4
+2020-08-02 20:09:46 INFO  GetRequestTest:27 - Ergast api kullanılarak get sorgusu yapılıyor.
+2020-08-02 20:09:47 INFO  GetRequestTest:54 - pathParam kullanılarak parametreli get sorgusu yapılması
+2020-08-02 20:09:48 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://ergast.com:80
+2020-08-02 20:09:48 DEBUG DefaultClientConnectionOperator:177 - Connecting to ergast.com:80
+2020-08-02 20:09:48 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-02 20:09:48 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-02 20:09:48 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-02 20:09:48 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-02 20:09:48 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-02 20:09:48 DEBUG DefaultClientConnection:274 - Sending request: GET /api/f1/2017/circuits.json HTTP/1.1
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "GET /api/f1/2017/circuits.json HTTP/1.1[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "Host: ergast.com[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "Accept-Encoding: gz?p,deflate[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-02 20:09:48 DEBUG headers:278 - >> GET /api/f1/2017/circuits.json HTTP/1.1
+2020-08-02 20:09:48 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-02 20:09:48 DEBUG headers:281 - >> Accept: */*
+2020-08-02 20:09:48 DEBUG headers:281 - >> Host: ergast.com
+2020-08-02 20:09:48 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-02 20:09:48 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_231)
+2020-08-02 20:09:48 DEBUG headers:281 - >> Accept-Encoding: gzıp,deflate
+2020-08-02 20:09:48 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "Date: Sun, 02 Aug 2020 17:51:20 GMT[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "Server: Apache/2.2.15 (CentOS)[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "X-Powered-By: PHP/5.3.3[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "Content-Length: 4551[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "Connection: close[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-08-02 20:09:48 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-02 20:09:48 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-02 20:09:48 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-02 20:09:48 DEBUG headers:265 - << Date: Sun, 02 Aug 2020 17:51:20 GMT
+2020-08-02 20:09:48 DEBUG headers:265 - << Server: Apache/2.2.15 (CentOS)
+2020-08-02 20:09:48 DEBUG headers:265 - << X-Powered-By: PHP/5.3.3
+2020-08-02 20:09:48 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-02 20:09:48 DEBUG headers:265 - << Content-Length: 4551
+2020-08-02 20:09:48 DEBUG headers:265 - << Connection: close
+2020-08-02 20:09:48 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2020-08-02 20:09:48 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2020-08-02 20:09:48 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-02 20:09:48 DEBUG wire:87 -  << "{"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/2017/circuits.json","limit":"30","offset":"0","total":"20","CircuitTable":{"season":"2017","Circuits":[{"circuitId":"albert_park","url":"http:\/\/en.wikipedia.org\/wiki\/Melbourne_Grand_Prix_Circuit","circuitName":"Albert Park Grand Prix Circuit","Location":{"lat":"-37.8497","long":"144.968","locality":"Melbourne","country":"Australia"}},{"circuitId":"americas","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_of_the_Americas","circuitName":"Circuit of the Americas","Location":{"lat":"30.1328","long":"-97.6411","locality":"Austin","country":"USA"}},{"circuitId":"bahrain","url":"http:\/\/en.wikipedia.org\/wiki\/Bahrain_International_Circuit","circuitName":"Bahrain International Circuit","Location":{"lat":"26.0325","long":"50.5106","locality":"Sakhir","country":"Bahrain"}},{"circuitId":"BAK","url":"http:\/\/en.wikipedia.org\/wiki\/Baku_City_Circuit","circuitName":"Baku City Circuit","Location":{"lat":"40.3725","long":"49.8533","locality":"Baku","country":"Azerbaijan"}},{"circuitId":"catalunya","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Barcelona-Catalunya","circuitName":"Circuit de Barcelona-Catalunya","Location":{"lat":"41.57","long":"2.26111","locality":"Montmel[0xc3][0xb3]","country":"Spain"}},{"circuitId":"hungaroring","url":"http:\/\/en.wikipedia.org\/wiki\/Hungaroring","circuitName":"Hungaroring","Location":{"lat":"47.5789","long":"19.2486","locality":"Budapest","country":"Hungary"}},{"circuitId":"interlagos","url":"http:\/\/en.wikipedia.org\/wiki\/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace","circuitName":"Aut[0xc3][0xb3]dromo Jos[0xc3][0xa9] Carlos Pace","Location":{"lat":"-23.7036","long":"-46.6997","locality":"S[0xc3][0xa3]o Paulo","country":"Brazil"}},{"circuitId":"marina_bay","url":"http:\/\/en.wikipedia.org\/wiki\/Marina_Bay_Street_Circuit","circuitName":"Marina Bay Street Circuit","Location":{"lat":"1.2914","long":"103.864","locality":"Marina Bay","country":"Singapore"}},{"circuitId":"monaco","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Monaco","circuitName":"Circuit de Monaco","Location":{"lat":"43.7347","long":"7.42056","locality":"Monte-Carlo","country":"Monaco"}},{"circuitId":"monza","url":"http:\/\/en.wikipedia.org\/wiki\/Autodromo_Nazionale_Monza","circuitName":"Autodromo Nazionale di Monza","Location":{"lat":"45.6156","long":"9.28111","locality":"Monza","country":"Italy"}},{"circuitId":"red_bull_ring","url":"http:\/\/en.wikipedia.org\/wiki\/Red_Bull_Ring","circuitName":"Red Bull Ring","Location":{"lat":"47.2197","long":"14.7647","locality":"Spielburg","country":"Austria"}},{"circuitId":"rodriguez","url":"http:\/\/en.wikipedia.org\/wiki\/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez","circuitName":"Aut[0xc3][0xb3]dromo Hermanos Rodr[0xc3][0xad]guez","Location":{"lat":"19.4042","long":"-99.0907","locality":"Mexico City","country":"Mexico"}},{"circuitId":"sepang","url":"http:\/\/en.wikipedia.org\/wiki\/Sepang_International_Circuit","circuitName":"Sepang International Circuit","Location":{"lat":"2.76083","long":"101.738","locality":"Kuala Lumpur","country":"Malaysia"}},{"circuitId":"shanghai","url":"http:\/\/en.wikipedia.org\/wiki\/Shanghai_International_Circuit","circuitName":"Shanghai International Circuit","Location":{"lat":"31.3389","long":"121.22","locality":"Shanghai","country":"China"}},{"circuitId":"silverstone","url":"http:\/\/en.wikipedia.org\/wiki\/Silverstone_Circuit","circuitName":"Silverstone Circuit","Location":{"lat":"52.0786","long":"-1.01694","locality":"Silverstone","country":"UK"}},{"circuitId":"sochi","url":"http:\/\/en.wikipedia.org\/wiki\/Sochi_Autodrom","circuitName":"Sochi Autodrom","Location":{"lat":"43.4057","long":"39.9578","locality":"Sochi","country":"Russia"}},{"circuitId":"spa","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_de_Spa-Francorchamps","circuitName":"Circuit de Spa-Francorchamps","Location":{"lat":"50.4372","long":"5.97139","locality":"Spa","country":"Belgium"}},{"circuitId":"suzuka","url":"http:\/\/en.wikipedia.org\/wiki\/Suzuka_Circuit","circuitName":"Suzuka Circuit","Location":{"lat":"34.8431","long":"136.541","locality":"Suzuka","country":"Japan"}},{"circuitId":"villeneuve","url":"http:\/\/en.wikipedia.org\/wiki\/Circuit_Gilles_Villeneuve","circuitName":"Circuit Gilles Villeneuve","Location":{"lat":"45.5","long":"-73.5228","locality":"Montreal","country":"Canada"}},{"circuitId":"yas_marina","url":"http:\/\/en.wikipedia.org\/wiki\/Yas_Marina_Circuit","circuitName":"Yas Marina Circuit","Location":{"lat":"24.4672","long":"54.6031","locality":"Abu Dhabi","country":"UAE"}}]}}}"
+2020-08-02 20:09:48 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@10b9db7b
+2020-08-02 20:09:48 DEBUG DefaultClientConnection:164 - Connection 0.0.0.0:56030<->81.27.85.129:80 shut down
+2020-08-02 20:09:49 INFO  GetRequestTest:67 - Response :io.restassured.internal.RequestSpecificationImpl@450794b4
